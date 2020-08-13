@@ -1,0 +1,189 @@
+/* Layout */
+* { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	background: #FAFAFA;
+
+	flex-direction: row;
+	justify-content: space-between;
+
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+	padding: 12px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	padding-top: 52px;
+	padding-bottom: 54px;
+}
+
+.tab-box {
+	display: flex;
+	position: fixed;
+
+	width: 100%;
+	bottom: 0;
+
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+
+	border-top: 1px solid #efefef;
+	padding: 16px 0;
+	background: #FAFAFA;
+}
+
+/* Default Style */
+svg {
+	color: #343434;
+}
+
+.svg-size-18 {
+	width: 18px;
+	height: 18px;
+}
+
+
+/* Nav */
+.flex-grow-1 {
+	flex-grow: 1;
+}
+.logo-box {
+	padding-top: 4px;
+	padding-left: 12px;
+}
+.logo {
+	height: 24px;
+}
+
+nav svg {
+	padding-top: 2px;
+}
+
+/* Story */
+.story {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	height: fit-content;
+	padding: 12px 12px 8px 12px;
+	border-bottom: 1px solid #eeeeee;
+}
+.story .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 24px;
+}
+.story .item:last-child {
+	margin-right: 100px;
+}
+
+.story .item img {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border: 1px solid #eeeeee;
+}
+.story .item .name {
+	font-size: 10px;
+	margin-top: 8px;
+}
+
+/*Utility */
+.image-slider {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+
+/* Feed */
+.feed-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 12px;
+}
+
+.feed-header .user-profile {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.feed-header .user-name {
+	flex-grow: 1;
+	font-size: 14px;
+	margin-left: 12px;
+	font-weight: 600;
+}
+
+.feed-header .feed-menu {
+	width: 18px;
+	height: 18px;
+	transform: rotate(90deg);
+}
+
+
+.feed .feed-image {
+	display: flex;
+	width: 100vw;
+	height: 100vw;
+	scroll-snap-align: start;
+}
+
+
+.feed .feed-footer {
+	padding: 12px;
+}
+
+.feed .feed-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.feed .feed-icons div:first-child svg {
+	margin-right: 4px;
+}
+
+.feed .feed-footer p {
+	margin: 0;
+}
+
+.like-text {
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 4px;
+}
+
+.feed-footer .user-id {
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 4px;
+}
+.feed-footer .tag {
+	font-size: 14px;
+	margin-left: 2px;
+	color: navy;
+}
+
+.feed-footer p.comment {
+	font-size: 12px;
+	margin-top: 4px;
+	color: #aaaaaa;
+}
